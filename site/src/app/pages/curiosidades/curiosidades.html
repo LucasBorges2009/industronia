@@ -1,0 +1,54 @@
+<section class="p-6 max-w-5xl mx-auto bg-gray-900 rounded-xl shadow-lg mt-8">
+
+  <h1 class="text-3xl font-bold text-white mb-8 text-center">
+    Documentação do Sistema
+  </h1>
+
+  <!-- SEÇÕES -->
+  <div class="space-y-6 mb-10">
+
+    <div *ngFor="let secao of secoes"
+         class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition duration-300">
+
+      <h2 class="text-xl font-semibold text-yellow-300 mb-3">
+        {{ secao.titulo }}
+      </h2>
+
+      <p class="text-gray-300 leading-relaxed">
+        {{ secao.conteudo }}
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- CENTRAL DE RECURSOS -->
+  <div>
+    <h2 class="text-2xl font-bold text-white mb-6 text-center">
+      Central de Recursos
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div *ngFor="let recurso of recursos"
+           class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+
+        <h3 class="text-lg font-semibold text-yellow-300 mb-2">
+          {{ recurso.nome }}
+        </h3>
+
+        <p class="text-gray-300 mb-4">
+          {{ recurso.descricao }}
+        </p>
+
+        <a [href]="recurso.link" target="_blank"
+           class="text-blue-400 hover:underline">
+          Acessar →
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
