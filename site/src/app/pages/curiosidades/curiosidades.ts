@@ -6,43 +6,30 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './curiosidades.html',
-  styleUrls: ['./curiosidades.css'],
+  styleUrls: ['./curiosidades.css']
 })
 export class Curiosidades {
 
-  secoes = [
+  curiosidades = [
     {
-      titulo: 'Sobre o Projeto',
-      conteudo: 'Este site foi desenvolvido com o objetivo de apresentar notícias atualizadas sobre tecnologia, utilizando uma interface moderna, responsiva e de fácil navegação.'
+      titulo: '🏭 Produção em Massa',
+      descricao: 'As fábricas operam continuamente com alta eficiência e grande volume de produção.'
     },
     {
-      titulo: 'Funcionalidades',
-      conteudo: 'O sistema exibe notícias em formato de cards contendo imagem, título e descrição. O layout é responsivo e se adapta a diferentes tamanhos de tela.'
+      titulo: '📦 Exportação Global',
+      descricao: 'Grande parte da produção é destinada ao mercado internacional.'
     },
     {
-      titulo: 'Tecnologias Utilizadas',
-      conteudo: 'O projeto foi desenvolvido utilizando Angular, HTML, CSS/Tailwind e TypeScript.'
+      titulo: '⚙️ Automação Industrial',
+      descricao: 'Processos automatizados aumentam produtividade e reduzem custos.'
     },
     {
-      titulo: 'Estrutura do Projeto',
-      conteudo: 'A aplicação é organizada em componentes como Home, Documentação, Tutoriais e Sobre, utilizando Angular Router para navegação.'
+      titulo: '🏛️ Governo Populista',
+      descricao: 'Foco em crescimento econômico e apoio popular através da indústria.'
     },
     {
-      titulo: 'Objetivo',
-      conteudo: 'Simular um portal de notícias moderno com foco em tecnologia.'
-    }
-  ];
-
-  recursos = [
-    {
-      nome: 'Documentação Oficial do Angular',
-      descricao: 'Acesse a documentação completa do Angular, com guias, exemplos e boas práticas.',
-      link: 'https://angular.dev'
-    },
-    {
-      nome: 'Documentação do Tailwind CSS',
-      descricao: 'Guia oficial do Tailwind CSS para estilização moderna e responsiva.',
-      link: 'https://tailwindcss.com/docs'
+      titulo: '⚠️ Baixo Investimento Social',
+      descricao: 'Educação e saúde recebem menos recursos, gerando desafios sociais.'
     }
   ];
 

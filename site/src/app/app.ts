@@ -5,11 +5,11 @@ import { Footer } from './layout/footer/footer';
 import { Home } from './pages/home/home';
 import { Curiosidades  } from './pages/curiosidades/curiosidades';
 import { Situacao } from './pages/situacao/situacao';
-import { Solucao } from './pages/solucao/solucao';
+import { Desafio } from './pages/desafio/desafio';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, Header, Footer, Home, Curiosidades, Situacao, Solucao],
+  imports: [RouterOutlet, RouterLink, Header, Footer, Home, Curiosidades, Situacao, Desafio],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
